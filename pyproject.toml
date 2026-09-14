@@ -1,0 +1,18 @@
+[project]
+name = "my-flask-worker"
+version = "0.1.0"
+description = "Flask Python Worker"
+requires-python = ">=3.13"
+dependencies = [
+    "flask",
+    "aiohttp",
+    "protobuf",
+    "googleapis-common-protos",
+    "pycryptodome"
+]
+
+[dependency-groups]
+dev = [
+    "workers-py",
+    "workers-runtime-sdk"
+]
